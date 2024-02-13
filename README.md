@@ -7,7 +7,18 @@ We use the pcap C-library to get network frames and then parses them in order to
 
 This project makes use of the [pcap library](https://github.com/the-tcpdump-group/libpcap) to capture the frames
 
-# Compile
+# Build
+
+Clone the repository using
+```bash
+git clone https://github.com/NicolasGresset/network_analyzer.git
+```
+at the place of your convenience then enters the folder with
+```bash
+cd network_analyzer
+```
+
+Therefore, you can build the project with
 
 ```bash
 make clean
@@ -24,7 +35,7 @@ You can whether choose to do a live analysis or use previously captured trames f
 
 Run
 ```bash
-./bin/main -i interface_name -v verbose_level [-f filter]
+./bin/sniffer -i interface_name -v verbose_level [-f filter]
 ```
 The interface name refers to the one you can find with
 ```bash
@@ -38,14 +49,14 @@ Filters are optional BPF filters and you can find syntax examples [`here`](https
 
 Therefore, a complete utilization could look like
 ```bash
-./bin/main -i wlp2s0 -v 3 -f "port 80"
+./bin/sniffer -i wlp2s0 -v 3 -f "port 80"
 ```
 
 ## Offline analysis
 
-In offline mode, you should take as input a file you previously obtained from network analysers tools such as [tcpdump](https://www.tcpdump.org/) or a packet generation tool like [scapy](https://scapy.net/)
+In offline mode, you should take as input a file you have previously obtained from network analysers tools such as [tcpdump](https://www.tcpdump.org/) or a packet generation tool like [scapy](https://scapy.net/)
 
 Example command
 ```bash
-./bin/main -o packet1.pcap -v 2
+./bin/sniffer -o packet1.pcap -v 2
 ```

@@ -1,4 +1,4 @@
-TARGET = main
+TARGET = sniffer
 
 
 SRCDIR   := src
