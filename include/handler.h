@@ -2,13 +2,6 @@
 
 #include <pcap.h>
 
-#define CHK(op)                                                                \
-    do {                                                                       \
-        if ((op) == -1)                                                        \
-            raler(1, #op);                                                     \
-    } while (0)
-
-
 #define PROTOCOLE_INCONNU -1
 
 /**

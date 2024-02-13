@@ -57,6 +57,16 @@
         "typeinfo": "c",
         "handler.h": "c",
         "erreur.h": "c",
-        "capture.h": "c"
+        "capture.h": "c",
+        "ip6.h": "c",
+        "tcp.h": "c",
+        "udp.h": "c",
+        "niveau4.h": "c",
+        "ip_icmp.h": "c",
+        "if_arp.h": "c",
+        "smtp.h": "c",
+        "string.h": "c",
+        "nameser.h": "c",
+        "affichage.h": "c"
     }
 }

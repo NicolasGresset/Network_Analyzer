@@ -6,7 +6,7 @@ OBJDIR   := obj
 BINDIR   := bin
 INCLUDE_PATH := include
 
-CFLAGS := -Wall -Wextra -g
+CFLAGS := -Wall -Wextra -g -pedantic
 LDLIBS := -lpcap
 
 SOURCES  := $(wildcard $(SRCDIR)/*.c)
