@@ -1,3 +1,4 @@
-data/*
-obj/*
-.vscode/*
+/data/
+/obj/
+/.vscode/
+/test/
